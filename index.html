@@ -21,7 +21,7 @@
 		<style>
 			@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
-			/* --- COLOR PALETTE SYSTEM (UPDATED TO Q1 STYLES) --- */
+			/* --- COLOR PALETTE SYSTEM (AUTHENTIC BRUSHED SILVER & PLATINUM) --- */
 			* { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
 			body { background: #F4F5F7; color: #1E293B; font-family: 'Inter', sans-serif; overflow-x: hidden; }
 			a { text-decoration: none !important; }
@@ -29,7 +29,7 @@
 			:focus-visible { outline: 3px solid #7A5B12; outline-offset: 2px; }
 			.skip-link {
 				position: absolute; left: 12px; top: 0; transform: translateY(-120%);
-				background: #1E293B; color: #ffffff !important; padding: 10px 16px;
+				background: #334155; color: #ffffff !important; padding: 10px 16px;
 				z-index: 10002; border-radius: 0 0 10px 10px; font-weight: 700;
 			}
 			.skip-link:focus { transform: translateY(0); }
@@ -38,13 +38,17 @@
 			.page-view { display: none; }
 			.page-view.active-page { display: block; }
 
-			/* --- HERITAGE ACKNOWLEDGMENT BAR --- */
+			/* --- HERITAGE ACKNOWLEDGMENT BAR (BRUSHED METAL) --- */
 			.au-heritage-bar {
-				background: #151f30;
-				color: #f1f5f9;
+				background: 
+					linear-gradient(90deg, rgba(255,255,255,0.4) 0%, rgba(0,0,0,0.08) 50%, rgba(255,255,255,0.4) 100%),
+					repeating-linear-gradient(0deg, transparent, transparent 1px, rgba(0,0,0,0.04) 1px, rgba(0,0,0,0.04) 2px),
+					linear-gradient(135deg, #cbd5e1 0%, #94a3b8 50%, #64748b 100%);
+				color: #1E293B;
 				padding: 10px 0;
 				font-size: 0.85rem;
 				border-bottom: 2px solid #D4AF37;
+				box-shadow: inset 0 1px 0 rgba(255,255,255,0.8);
 			}
 			.au-heritage-bar .main-container {
 				display: flex;
@@ -56,7 +60,7 @@
 			.flag-container { display: flex; align-items: center; gap: 10px; }
 			.flag-item { font-size: 1.3rem; line-height: 1; }
 			.state-badge {
-				background: #151f30;
+				background: #1E293B;
 				color: #E6C655;
 				border: 1px solid #E6C655;
 				font-weight: 800;
@@ -69,8 +73,8 @@
 				width: 26px; height: 18px;
 				position: relative; border-radius: 2px;
 				overflow: hidden; display: inline-block;
-				border: 1px solid rgba(255, 255, 255, 0.2);
-				box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+				border: 1px solid rgba(0, 0, 0, 0.2);
+				box-shadow: 0 1px 3px rgba(0,0,0,0.15);
 			}
 			.flag-top-black { position: absolute; top: 0; left: 0; width: 100%; height: 50%; background: #000000; }
 			.flag-bottom-red { position: absolute; bottom: 0; left: 0; width: 100%; height: 50%; background: #E4002B; }
@@ -80,30 +84,35 @@
 				width: 8px; height: 8px;
 				background: #E6C655; border-radius: 50%; z-index: 2;
 			}
-			.country-ack { color: #cbd5e1; font-size: 0.8rem; font-weight: 500; }
+			.country-ack { color: #1E293B; font-size: 0.8rem; font-weight: 700; text-shadow: 0 1px 0 rgba(255,255,255,0.5); }
 
-			/* --- HEADER & NAVIGATION --- */
+			/* --- HEADER & NAVIGATION (REALISTIC BRUSHED SILVER METALLIC) --- */
 			#header-fixed {
-				position: fixed; top: 0px; left: 0; width: 100%; height: 80px;
-				background: #1E293B; z-index: 10000;
+				position: fixed; top: 0px; left: 0; width: 100%; height: 95px;
+				background: 
+					linear-gradient(90deg, rgba(255,255,255,0.5) 0%, rgba(0,0,0,0.1) 50%, rgba(255,255,255,0.5) 100%),
+					repeating-linear-gradient(0deg, transparent, transparent 1px, rgba(0,0,0,0.05) 1px, rgba(0,0,0,0.05) 2px),
+					linear-gradient(135deg, #f1f5f9 0%, #cbd5e1 50%, #94a3b8 100%);
+				z-index: 10000;
 				border-bottom: 2px solid #D4AF37; display: flex; align-items: center;
+				box-shadow: 0 4px 25px rgba(0,0,0,0.15);
 			}
 			.main-container { max-width: 1200px; width: 90%; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
 			.image-logo { display: flex; align-items: center; transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important; will-change: transform; cursor: pointer; }
-			.image-logo img { height: 78px; width: 80px; pointer-events: none; }
+			.image-logo img { height: 70px; width: 70px; pointer-events: none; border-radius: 50%; object-fit: cover; margin-right: 14px; border: 2px solid #D4AF37; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
 			.image-logo:hover { transform: scale(1.08) !important; }
 
 			:root {
 			  --gold-start: #E6C655;
 			  --gold-end: #D4AF37;
-			  --text-white: #ffffff;
-			  --bg-slate: #1E293B;
+			  --text-dark: #1E293B;
+			  --bg-silver: #CBD5E1;
 			}
 
-			header { background-color: var(--bg-slate) !important; }
+			header { background-color: var(--bg-silver) !important; }
 			.logo-text .logo-name {
-			  font-size: 1.8rem !important;
-			  background: linear-gradient(135deg, var(--gold-start), var(--gold-end)) !important;
+			  font-size: 1.85rem !important;
+			  background: linear-gradient(135deg, #9B7817, #D4AF37) !important;
 			  -webkit-background-clip: text !important;
 			  -webkit-text-fill-color: transparent !important;
 			  text-transform: uppercase !important;
@@ -111,52 +120,51 @@
 			  font-weight: 800 !important;
 			  margin: 0 !important;
 			  line-height: 1 !important;
+			  filter: drop-shadow(0 1px 1px rgba(255,255,255,0.8));
 			}
 			.logo-text span {
-			  font-size: 1rem !important;
-			  color: var(--gold-end) !important;
-			  font-weight: 600 !important;
+			  font-size: 1.05rem !important;
+			  color: #7A5B12 !important;
+			  font-weight: 700 !important;
 			  display: block !important;
-			  margin-top: 2px !important;
+			  margin-top: 3px !important;
 			}
 
 			#main-nav { display: flex; align-items: center; }
 			#main-nav a { 
-				color: #ffffff; font-weight: 600; text-decoration: none; 
+				color: #1E293B; font-weight: 700; text-decoration: none; 
 				margin-left: 15px; font-size: 0.95rem; padding: 10px 22px; 
 				border-radius: 50px; 
 				transition: 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
 				will-change: transform; cursor: pointer;
+				background: rgba(255, 255, 255, 0.35);
+				border: 1px solid rgba(255, 255, 255, 0.6);
 			}
 			#main-nav a:hover { 
 				transform: translateY(-2px) scale(1.05) !important; 
-				background: #151f30; color: #E6C655 !important; 
+				background: #1E293B; color: #E6C655 !important; 
+				border-color: #1E293B;
 			}
-			.active-link { background: rgba(212, 175, 55, 0.1); color: #D4AF37 !important; border: 1px solid #D4AF37; }
+			.active-link { background: rgba(212, 175, 55, 0.25) !important; color: #7A5B12 !important; border: 1px solid #D4AF37 !important; }
 			#main-nav a.staff-login {
 				display: inline-flex; align-items: center; gap: 6px; flex-shrink: 0;
 				margin-left: 12px; padding: 8px 14px; font-size: 0.82rem; font-weight: 700;
-				color: #E6C655; background: transparent; border: 1px solid #E6C655;
+				color: #7A5B12; background: rgba(255,255,255,0.6); border: 1px solid #D4AF37;
 				border-radius: 50px; white-space: nowrap; line-height: 1; letter-spacing: 0.01em;
 				transition: background-color 0.2s, color 0.2s, border-color 0.2s, transform 0.2s !important;
 			}
 			#main-nav a.staff-login svg { width: 14px; height: 14px; flex: 0 0 auto; display: block; }
 			#main-nav a.staff-login:hover {
-				background: rgba(230, 198, 85, 0.12); color: #F8E7A0 !important;
-				border-color: #E6C655; transform: translateY(-2px) !important;
+				background: #1E293B !important; color: #E6C655 !important; 
+				border-color: #1E293B !important; transform: translateY(-2px) !important;
 			}
 			#main-nav a.staff-login:focus-visible {
-				outline: 3px solid #ffffff; outline-offset: 3px;
-				box-shadow: 0 0 0 2px #1E293B, 0 0 0 6px #ffffff;
+				outline: 3px solid #1E293B; outline-offset: 3px;
 			}
 			.footer-col a.staff-login-footer { font-size: 0.85rem; transition: color 0.2s, transform 0.2s !important; }
-			.footer-col a.staff-login-footer:focus-visible {
-				outline: 3px solid #ffffff; outline-offset: 3px;
-				box-shadow: 0 0 0 2px #151f30, 0 0 0 6px #ffffff;
-			}
 
 			/* --- HERO BANNERS --- */
-			#page-wrapper { padding-top: 80px; }
+			#page-wrapper { padding-top: 95px; }
 			.hero-banner, .support-desk-hero, .products-hero-banner, .biosecurity-hero-banner, .inner-page-hero, .page-banner {
 				min-height: 400px; display: flex; align-items: center; 
 				color: #1E293B !important; padding: 80px 0 !important;
@@ -183,7 +191,7 @@
 				will-change: transform; box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3); cursor: pointer;
 			}
 			.hero-btn:hover { 
-				background: #151f30 !important; color: #ffffff !important; 
+				background: #1E293B !important; color: #ffffff !important; 
 				transform: translateY(-6px) scale(1.05) !important; 
 				box-shadow: 0 15px 35px rgba(30, 41, 59, 0.3); 
 			}
@@ -201,7 +209,7 @@
 				margin: 40px auto 20px auto; position: relative; z-index: 10; max-width: 1000px; padding: 0 20px;
 			}
 			.filter-btn {
-				background: #ffffff; color: #1E293B; border: 2px solid #1E293B;
+				background: #ffffff; color: #1E293B; border: 2px solid #CBD5E1;
 				padding: 12px 26px; border-radius: 50px; font-weight: 700; font-size: 0.95rem;
 				cursor: pointer; transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 			}
@@ -211,7 +219,7 @@
 			}
 			.product-card-modern {
 				background: #ffffff; border-radius: 24px; padding: 30px;
-				border: 1px solid rgba(30, 41, 59, 0.08); box-shadow: 0 10px 30px rgba(30, 41, 59, 0.05);
+				border: 1px solid rgba(203, 213, 225, 0.6); box-shadow: 0 10px 30px rgba(30, 41, 59, 0.05);
 				transition: all 0.4s ease; display: flex; flex-direction: column; justify-content: space-between; position: relative; overflow: hidden;
 			}
 			.product-card-modern:hover { transform: translateY(-10px); box-shadow: 0 20px 45px rgba(30, 41, 59, 0.12); border-color: #D4AF37; }
@@ -222,7 +230,7 @@
 			.card-badge.gold { background: #fffbe6; color: #9B7817; border: 1px solid #E6C655; }
 			.product-icon-box {
 				width: 80px; height: 80px; border-radius: 20px; background: #f8fafc;
-				display: flex; align-items: center; justify-content: center; font-size: 2.8rem; margin-bottom: 20px; border: 1px solid rgba(30, 41, 59, 0.05);
+				display: flex; align-items: center; justify-content: center; font-size: 2.8rem; margin-bottom: 20px; border: 1px solid rgba(203, 213, 225, 0.5);
 				overflow: hidden;
 			}
 			.product-icon-box img { width: auto; height: auto; max-width: 72px; max-height: 72px; object-fit: contain; transition: 0.3s ease; }
@@ -245,7 +253,7 @@
 			.text-logo:hover { opacity: 1; transform: scale(1.15); }
 			.cert-gmp { color: #1E293B !important; }
 			.cert-haccp { color: #D4AF37 !important; letter-spacing: 2px; border-top: 3px solid #D4AF37; }
-			.cert-gi { color: #E6C655 !important; font-style: italic; background: #151f30; padding: 2px 8px; border-radius: 4px; }
+			.cert-gi { color: #E6C655 !important; font-style: italic; background: #1E293B; padding: 2px 8px; border-radius: 4px; }
 			.cert-daff { color: #1E293B !important; font-weight: 700; }
 			.tplink { color: #D4AF37 !important; }
 			.cert-origin { color: #E6C655 !important; font-weight: 800; background: #1E293B; padding: 2px 8px; }
@@ -257,7 +265,7 @@
 			.services-grid { display: grid; grid-template-columns: 1fr; gap: 30px; width: 90%; max-width: 1200px; margin: 0 auto; }
 			.service-card { 
 				background: #ffffff; border-radius: 35px; padding: 40px 30px; text-align: center; 
-				border: 1px solid rgba(30, 41, 59, 0.1); box-shadow: 0 15px 40px rgba(0, 0, 0, 0.03); 
+				border: 1px solid rgba(203, 213, 225, 0.6); box-shadow: 0 15px 40px rgba(0, 0, 0, 0.03); 
 				transition: 0.5s cubic-bezier(0.34, 1.56, 0.64, 1); position: relative; overflow: hidden;
 			}
 			.card-icon-wrapper { 
@@ -271,42 +279,42 @@
 			.service-card:hover { transform: translateY(-10px); border-color: #D4AF37; box-shadow: 0 30px 60px rgba(212, 175, 55, 0.12); }
 
 			.team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 25px; margin-top: 30px; }
-			.team-card { background: #ffffff; padding: 35px 25px; border-radius: 20px; border: 1px solid rgba(30, 41, 59, 0.08); text-align: center; box-shadow: 0 10px 25px rgba(30, 41, 59,0.04); transition: 0.3s ease; }
+			.team-card { background: #ffffff; padding: 35px 25px; border-radius: 20px; border: 1px solid rgba(203, 213, 225, 0.6); text-align: center; box-shadow: 0 10px 25px rgba(30, 41, 59,0.04); transition: 0.3s ease; }
 			.team-card:hover { transform: translateY(-5px); border-color: #D4AF37; box-shadow: 0 15px 35px rgba(212, 175, 55, 0.1); }
-			.au-executive-card { background: #ffffff; padding: 40px 30px; border-radius: 24px; border: 1px solid rgba(30, 41, 59, 0.12); text-align: center; box-shadow: 0 12px 30px rgba(30, 41, 59,0.06); transition: 0.3s ease; }
+			.au-executive-card { background: #ffffff; padding: 40px 30px; border-radius: 24px; border: 1px solid rgba(203, 213, 225, 0.6); text-align: center; box-shadow: 0 12px 30px rgba(30, 41, 59,0.06); transition: 0.3s ease; }
 			.au-executive-card:hover { transform: translateY(-6px); border-color: #E6C655; box-shadow: 0 18px 40px rgba(30, 41, 59, 0.15); }
-			.testimonial-card { background: linear-gradient(135deg, #1E293B 0%, #151f30 100%); color: #ffffff; padding: 50px 40px; border-radius: 30px; margin-top: 50px; text-align: center; border: 1px solid rgba(212, 175, 55, 0.3); box-shadow: 0 20px 40px rgba(0,0,0,0.2); }
+			.testimonial-card { background: linear-gradient(135deg, #E2E8F0 0%, #CBD5E1 100%); color: #1E293B; padding: 50px 40px; border-radius: 30px; margin-top: 50px; text-align: center; border: 1px solid rgba(212, 175, 55, 0.4); box-shadow: 0 20px 40px rgba(0,0,0,0.08); }
 			.about-profile-card { background: #ffffff; padding: 30px; border-radius: 24px; border: 1px solid #e2e8f0; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
 			.profile-icon { display: flex; justify-content: center; align-items: center; gap: 10px; margin-bottom: 15px; }
-			.profile-icon img { height: 80px; width: auto; }
+			.profile-icon img { height: 75px; width: 75px; border-radius: 50%; object-fit: cover; }
 			.profile-divider { height: 2px; background: #e2e8f0; margin: 15px 0; }
 			.profile-stats { text-align: left; font-size: 0.9rem; line-height: 1.8; color: #475569; }
 			.profile-stats span { font-weight: 700; color: #1E293B; }
 
 			/* --- BIOSECURITY TABLE & CARDS --- */
 			.qa-section-title { font-size: 2rem; color: #1E293B; margin-bottom: 25px; font-weight: 800; }
-			.qa-card-modern { background: #ffffff; border-radius: 24px; padding: 40px; border: 1px solid rgba(30, 41, 59, 0.08); box-shadow: 0 10px 30px rgba(30, 41, 59, 0.05); transition: all 0.4s ease; }
+			.qa-card-modern { background: #ffffff; border-radius: 24px; padding: 40px; border: 1px solid rgba(203, 213, 225, 0.6); box-shadow: 0 10px 30px rgba(30, 41, 59, 0.05); transition: all 0.4s ease; }
 			.qa-card-modern:hover { transform: translateY(-5px); box-shadow: 0 20px 45px rgba(30, 41, 59, 0.1); border-color: #D4AF37; }
 			.qa-badge { display: inline-block; background: #fffbe6; color: #9B7817; border: 1px solid #E6C655; font-size: 0.8rem; font-weight: 800; padding: 6px 14px; border-radius: 50px; text-transform: uppercase; margin-bottom: 15px; }
 			.spec-table { width: 100%; border-collapse: collapse; margin-top: 20px; background: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.04); }
 			.spec-table th, .spec-table td { padding: 16px 20px; text-align: left; border-bottom: 1px solid #e2e8f0; }
-			.spec-table th { background: #1E293B; color: #ffffff; font-weight: 700; }
+			.spec-table th { background: #CBD5E1; color: #1E293B; font-weight: 800; }
 			.spec-table tr:hover { background: #f8fafc; }
 
 			/* --- CONTACT FORM & ACTION ROW --- */
 			.hero-action-row { display: flex; flex-wrap: wrap; gap: 15px; margin-top: 35px; }
 			.action-btn {
 				display: flex; align-items: center; gap: 12px; padding: 12px 20px; border-radius: 16px;
-				background: rgba(255, 255, 255, 0.7); border: 1px solid rgba(107, 114, 128, 0.2); color: #1E293B !important;
+				background: rgba(255, 255, 255, 0.8); border: 1px solid rgba(107, 114, 128, 0.2); color: #1E293B !important;
 				transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); backdrop-filter: blur(10px); cursor: pointer;
 			}
-			.action-btn:hover { transform: translateY(-4px); background: #1E293B; border-color: #1E293B; box-shadow: 0 10px 25px rgba(30, 41, 59, 0.25); }
-			.action-btn:hover .btn-text small, .action-btn:hover .btn-text strong { color: #D4AF37 !important; }
+			.action-btn:hover { transform: translateY(-4px); background: #CBD5E1; border-color: #94A3B8; box-shadow: 0 10px 25px rgba(30, 41, 59, 0.15); }
+			.action-btn:hover .btn-text small, .action-btn:hover .btn-text strong { color: #7A5B12 !important; }
 			.btn-icon { font-size: 1.5rem; }
 			.btn-text { display: flex; flex-direction: column; text-align: left; }
 			.btn-text small { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.5px; color: #6B7280; }
 			.btn-text strong { font-size: 0.95rem; font-weight: 800; color: #1E293B; }
-			.glass-form-container { flex: 0 0 460px; max-width: 100%; background: #ffffff; border: 1px solid rgba(30, 41, 59, 0.1); padding: 40px; border-radius: 28px; box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08); }
+			.glass-form-container { flex: 0 0 460px; max-width: 100%; background: #ffffff; border: 1px solid rgba(203, 213, 225, 0.6); padding: 40px; border-radius: 28px; box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08); }
 			.support-form-modern h2 { color: #1E293B; font-size: 1.6rem; font-weight: 800; margin-bottom: 4px; text-align: left; }
 			.form-subtext { color: #6B7280; font-size: 0.88rem; margin-bottom: 25px; text-align: left; }
 			.form-group { margin-bottom: 18px; text-align: left; }
@@ -322,17 +330,24 @@
 				background: linear-gradient(135deg, #E6C655 0%, #D4AF37 100%); color: #1E293B !important;
 				font-size: 1.05rem; font-weight: 800; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3);
 			}
-			.submit-btn-glow:hover { background: #151f30; color: #ffffff !important; transform: translateY(-2px); box-shadow: 0 15px 30px rgba(30, 41, 59, 0.3); }
+			.submit-btn-glow:hover { background: #1E293B; color: #ffffff !important; transform: translateY(-2px); box-shadow: 0 15px 30px rgba(30, 41, 59, 0.3); }
 
-			/* --- FOOTER --- */
-			#modern-footer { background: #151f30; color: #cbd5e1; padding: 60px 0 30px 0; border-top: 4px solid #D4AF37; }
+			/* --- FOOTER (BRUSHED METAL) --- */
+			#modern-footer { 
+				background: 
+					linear-gradient(90deg, rgba(255,255,255,0.4) 0%, rgba(0,0,0,0.08) 50%, rgba(255,255,255,0.4) 100%),
+					repeating-linear-gradient(0deg, transparent, transparent 1px, rgba(0,0,0,0.04) 1px, rgba(0,0,0,0.04) 2px),
+					linear-gradient(135deg, #cbd5e1 0%, #94a3b8 50%, #64748b 100%);
+				color: #1E293B; padding: 60px 0 30px 0; border-top: 4px solid #D4AF37; 
+				box-shadow: inset 0 1px 0 rgba(255,255,255,0.8); 
+			}
 			.footer-stack { max-width: 1200px; width: 90%; margin: 0 auto; display: flex; flex-direction: column; align-items: stretch; }
 			.footer-grid { display: grid; grid-template-columns: 1fr; gap: 40px; width: 100%; }
-			.footer-logo { height: 80px; width: auto; margin-bottom: 20px; }
-			.footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 25px; margin-top: 30px; text-align: center; font-size: 0.8rem; color: #94a3b8; }
-			.footer-col h4 { color: #E6C655; margin-bottom: 20px; }
-			.footer-col a { color: #cbd5e1 !important; transition: 0.3s; display: inline-block; cursor: pointer; }
-			.footer-col a:hover { color: #E6C655 !important; transform: translateX(5px); }
+			.footer-logo { height: 75px; width: 75px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; border: 2px solid #D4AF37; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+			.footer-bottom { border-top: 1px solid rgba(0,0,0,0.15); padding-top: 25px; margin-top: 30px; text-align: center; font-size: 0.8rem; color: #334155; font-weight: 600; }
+			.footer-col h4 { color: #7A5B12; margin-bottom: 20px; font-weight: 800; }
+			.footer-col a { color: #1E293B !important; transition: 0.3s; display: inline-block; cursor: pointer; font-weight: 600; }
+			.footer-col a:hover { color: #7A5B12 !important; transform: translateX(5px); }
 
 			.menu-toggle { display: none; }
 
@@ -356,21 +371,21 @@
 				.footer-grid { grid-template-columns: 2fr 1fr 1fr !important; }
 			}
 			@media screen and (max-width: 980px) {
-				#header-fixed { top: 0px; }
-				#page-wrapper { padding-top: 80px; }
+				#header-fixed { top: 0px; height: 95px; }
+				#page-wrapper { padding-top: 95px; }
 				.menu-toggle { display: flex; flex-direction: column; justify-content: space-between; width: 30px; height: 21px; background: transparent; border: none; z-index: 10001; cursor: pointer; }
-				.menu-toggle .bar { width: 100%; height: 3px; background-color: #ffffff; border-radius: 10px; transition: 0.3s; transform-origin: center; }
+				.menu-toggle .bar { width: 100%; height: 3px; background-color: #1E293B; border-radius: 10px; transition: 0.3s; transform-origin: center; }
 				.menu-toggle[aria-expanded="true"] .bar:nth-child(1) { transform: translateY(9px) rotate(45deg); }
 				.menu-toggle[aria-expanded="true"] .bar:nth-child(2) { opacity: 0; }
 				.menu-toggle[aria-expanded="true"] .bar:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
-				#main-nav { position: fixed; top: 80px; left: 0; width: 100%; background: #1E293B; flex-direction: column; display: none; z-index: 9999; border-bottom: 2px solid #D4AF37; }
+				#main-nav { position: fixed; top: 95px; left: 0; width: 100%; background: #E2E8F0; flex-direction: column; display: none; z-index: 9999; border-bottom: 2px solid #D4AF37; box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
 				#main-nav.is-open { display: flex !important; }
-				#main-nav a { width: 100%; text-align: center; margin: 0; border-bottom: 1px solid #151f30; padding: 15px 0; border-radius: 0; }
+				#main-nav a { width: 100%; text-align: center; margin: 0; border-bottom: 1px solid #CBD5E1; padding: 15px 0; border-radius: 0; color: #1E293B; background: transparent; }
 				#main-nav a.staff-login {
 					margin: 0; width: 100%; justify-content: center; border-radius: 0;
-					padding: 15px 0; font-size: 0.95rem; border: none; border-bottom: 1px solid #151f30;
+					padding: 15px 0; font-size: 0.95rem; border: none; border-bottom: 1px solid #CBD5E1;
 				}
-				#main-nav a.staff-login:hover { transform: none !important; background: #151f30; }
+				#main-nav a.staff-login:hover { transform: none !important; background: #CBD5E1; }
 				.glass-form-container { width: 100%; flex: 1 1 auto; padding: 30px 20px; }
 				.hero-action-row { justify-content: center; }
 				.spec-table { display: block; overflow-x: auto; }
@@ -410,7 +425,7 @@
 			<header id="header-fixed">
 				<div class="main-container">
 					<a href="#home" class="image-logo">
-						<img src="images/logo.png" alt="KH Trading Group Logo" width="240" height="238" loading="eager">
+						<img src="images/khtg.png" alt="KH Trading Group Logo" width="70" height="70" loading="eager">
 						<div class="logo-text">
 							<p class="logo-name">KH Trading</p>
 							<span>Group</span>
@@ -423,8 +438,8 @@
 					</button>
 					<nav id="main-nav">
 						<a href="#home" id="nav-home" class="active-link" aria-current="page">Home</a>
-						<a href="#products" id="nav-products">Products & Services</a>
-						<a href="#compliance" id="nav-compliance">Import/Export & QA</a>
+						<a href="#products" id="nav-products">Products</a>
+						<a href="#compliance" id="nav-compliance">Services & QA</a>
 						<a href="#about" id="nav-about">About Us</a>
 						<a href="#contact" id="nav-contact">Contact Us</a>
 						<a href="Q1.html" rel="nofollow" class="staff-login" aria-label="Staff Login" title="Staff Login">
@@ -547,9 +562,7 @@
 					<div class="main-container">
 						<div class="services-grid" id="product-grid">
 							
-							<!-- ==========================================
-								 AGRICULTURAL FLOURS (Items 1-7)
-							========================================== -->
+							<!-- AGRICULTURAL FLOURS -->
 							<div class="product-card-modern" data-category="flours">
 								<span class="card-badge gold">20 PCS / CARTON</span>
 								<div>
@@ -669,9 +682,7 @@
 								</div>
 							</div>
 
-							<!-- ==========================================
-								 RETAIL PEPPER CANISTERS
-							========================================== -->
+							<!-- RETAIL PEPPER CANISTERS -->
 							<div class="product-card-modern" data-category="retail-pepper">
 								<span class="card-badge gold">20 CANS / BOX</span>
 								<div>
@@ -876,9 +887,7 @@
 								</div>
 							</div>
 
-							<!-- ==========================================
-								 BULK INDUSTRIAL PEPPER
-							========================================== -->
+							<!-- BULK INDUSTRIAL PEPPER -->
 							<div class="product-card-modern" data-category="bulk-pepper">
 								<span class="card-badge">BULK 10KG</span>
 								<div>
@@ -1008,7 +1017,6 @@
 				<section class="services-section" style="padding: 30px 0;">
 					<div class="main-container" style="flex-direction: column; gap: 60px;">
 
-						<!-- Section 1: Core Biosecurity Pillars -->
 						<div>
 							<h2 class="qa-section-title">🛡️ Core Import & Export Compliance Pillars</h2>
 							<div class="services-grid">
@@ -1032,7 +1040,6 @@
 							</div>
 						</div>
 
-						<!-- Section 2: Technical Quality Standards Table -->
 						<div style="width: 100%;">
 							<h2 class="qa-section-title">🔬 Origin Quality & Export Specifications</h2>
 							<p style="color:#475569; margin-bottom: 20px;">Strict quality control and export compliance measures executed before international dispatch:</p>
@@ -1094,15 +1101,14 @@
 							</table>
 						</div>
 
-						<!-- Section 3: Documentation Checklist -->
-						<div class="qa-card-modern" style="background: linear-gradient(135deg, #1E293B 0%, #151f30 100%); color:#ffffff;">
-							<h3 style="color:#E6C655; font-size:1.6rem; margin-bottom:15px;">📋 Mandatory Import & Export Documentation Included</h3>
-							<p style="color:#e2e8f0; line-height:1.6; margin-bottom:25px;">Every international consignment managed by KH Trading Group is issued with comprehensive documentation to satisfy global customs and biosecurity standards:</p>
+						<div class="qa-card-modern" style="background: linear-gradient(135deg, #E2E8F0 0%, #CBD5E1 100%); color:#1E293B;">
+							<h3 style="color:#7A5B12; font-size:1.6rem; margin-bottom:15px; font-weight:800;">📋 Mandatory Import & Export Documentation Included</h3>
+							<p style="color:#334155; line-height:1.6; margin-bottom:25px; font-weight:600;">Every international consignment managed by KH Trading Group is issued with comprehensive documentation to satisfy global customs and biosecurity standards:</p>
 							<div style="display:flex; flex-wrap:wrap; gap:15px;">
-								<span style="background:rgba(255,255,255,0.1); padding:8px 16px; border-radius:30px; border:1px solid rgba(255,255,255,0.2);">✅ Official Phytosanitary Certificate</span>
-								<span style="background:rgba(255,255,255,0.1); padding:8px 16px; border-radius:30px; border:1px solid rgba(255,255,255,0.2);">✅ Steam Sterilization Certificate</span>
-								<span style="background:rgba(255,255,255,0.1); padding:8px 16px; border-radius:30px; border:1px solid rgba(255,255,255,0.2);">✅ Certificate of Origin</span>
-								<span style="background:rgba(255,255,255,0.1); padding:8px 16px; border-radius:30px; border:1px solid rgba(255,255,255,0.2);">✅ Bill of Lading & Commercial Invoice</span>
+								<span style="background:rgba(255,255,255,0.7); padding:8px 16px; border-radius:30px; border:1px solid #CBD5E1; font-weight:700;">✅ Official Phytosanitary Certificate</span>
+								<span style="background:rgba(255,255,255,0.7); padding:8px 16px; border-radius:30px; border:1px solid #CBD5E1; font-weight:700;">✅ Steam Sterilization Certificate</span>
+								<span style="background:rgba(255,255,255,0.7); padding:8px 16px; border-radius:30px; border:1px solid #CBD5E1; font-weight:700;">✅ Certificate of Origin</span>
+								<span style="background:rgba(255,255,255,0.7); padding:8px 16px; border-radius:30px; border:1px solid #CBD5E1; font-weight:700;">✅ Bill of Lading & Commercial Invoice</span>
 							</div>
 						</div>
 
@@ -1126,7 +1132,7 @@
 							<div class="about-profile-card">
 								<div class="profile-icon">
 									<a href="#home" class="image-logo">
-										<img src="images/logo.png" alt="KH Trading Group Logo" width="240" height="238" loading="lazy">
+										<img src="images/khtg.png" alt="KH Trading Group Logo" width="75" height="75" loading="lazy">
 									</a>
 								</div>
 								<h2>KH Trading Group</h2>
@@ -1163,9 +1169,8 @@
 				<section class="services-section" style="padding: 80px 0; background: #ffffff;">
 					<div class="main-container" style="flex-direction: column; gap: 50px;">
 						
-						<!-- Vision & Mission Callouts -->
 						<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; width: 100%;">
-							<div style="background: #f8fafc; padding: 40px; border-radius: 24px; border-left: 6px solid #1E293B;">
+							<div style="background: #f8fafc; padding: 40px; border-radius: 24px; border-left: 6px solid #CBD5E1;">
 								<h2 style="color: #1E293B; font-size: 1.5rem; margin-bottom: 12px; font-weight: 800;">👁️ Our Vision</h2>
 								<p style="color: #475569; line-height: 1.7; font-size: 1.05rem;">
 									To be a premier global import and export enterprise delivering exceptional cross-border trade efficiency and trusted supply chain solutions worldwide.
@@ -1180,7 +1185,6 @@
 							</div>
 						</div>
 
-						<!-- Core Values Grid -->
 						<div style="width: 100%; text-align: center; margin-top: 20px;">
 							<h2 style="font-size: 2.2rem; color: #1E293B; font-weight: 800; margin-bottom: 15px;">Our Core Values</h2>
 							<p style="color: #475569; margin-bottom: 40px;">Professional excellence and transparent trade practices in every transaction.</p>
@@ -1245,7 +1249,6 @@
 					</div>
 				</section>
 
-				<!-- Import & Export Services Detail Section -->
 				<section class="services-section" style="padding: 80px 0; background: #ffffff;">
 					<div class="main-container" style="flex-direction: column; gap: 60px;">
 						
@@ -1284,14 +1287,13 @@
 							</div>
 						</div>
 
-						<!-- Testimonial -->
 						<div class="testimonial-card">
-							<div style="font-size: 2rem; color: #E6C655; margin-bottom: 15px;">★★★★★</div>
-							<blockquote style="font-size: 1.25rem; font-style: italic; line-height: 1.7; color: #f8fafc; max-width: 800px; margin: 0 auto 20px auto;">
+							<div style="font-size: 2rem; color: #D4AF37; margin-bottom: 15px;">★★★★★</div>
+							<blockquote style="font-size: 1.25rem; font-style: italic; line-height: 1.7; color: #1E293B; max-width: 800px; margin: 0 auto 20px auto;">
 								“KH Trading Group handled our international import requirements and customs clearance flawlessly. Their professionalism and logistics expertise made the entire procurement process effortless.”
 							</blockquote>
-							<p style="color: #E6C655; font-weight: 800; font-size: 1.05rem;">Procurement Director — Food Processing & Distribution</p>
-							<p style="color: #94a3b8; font-size: 0.85rem;">International Trade Partner (Confidential)</p>
+							<p style="color: #7A5B12; font-weight: 800; font-size: 1.05rem;">Procurement Director — Food Processing & Distribution</p>
+							<p style="color: #475569; font-size: 0.85rem;">International Trade Partner (Confidential)</p>
 						</div>
 
 					</div>
@@ -1306,7 +1308,6 @@
 					<div class="main-container">
 						<div class="hero-flex">
 							
-							<!-- Left Column -->
 							<div class="hero-content">
 								<div class="badge">Direct Import & Export Commercial Desk</div>
 								<h1>Let's Discuss Your<br>Trade & Import Requirements.</h1>
@@ -1337,13 +1338,11 @@
 								</div>
 							</div>
 
-							<!-- Right Column: Wholesale Form -->
 							<div class="glass-form-container">
 								<form class="support-form-modern" id="wholesaleForm">
 									<h2>Request Trade / Quote Inquiry</h2>
 									<p class="form-subtext">Fill out your details for pricing, logistics, or sample dispatch.</p>
 
-									<!-- HONEYPOT FIELD -->
 									<div style="display:none !important;" aria-hidden="true">
 										<label for="website_hp">Leave this field empty</label>
 										<input type="text" name="website_hp" id="website_hp" tabindex="-1" autocomplete="off">
@@ -1394,7 +1393,6 @@
 										<textarea id="message" name="Message" rows="5" placeholder="Volumes, shipping destinations, pack sizes, or import/export requirements"></textarea>
 									</div>
 
-									<!-- HUMAN VERIFICATION BOX -->
 									<div class="form-group" style="margin-top: 20px; background: rgba(212, 175, 55, 0.1); padding: 12px 16px; border-radius: 12px; border: 1px solid #D4AF37; display: flex; align-items: center; gap: 12px;">
 										<input type="checkbox" id="human_check" name="Contact Consent" value="Agreed" style="width: 20px; height: 20px; accent-color: #D4AF37; cursor: pointer;" required>
 										<label for="human_check" style="margin-bottom: 0; font-size: 0.9rem; color: #1E293B; cursor: pointer; text-transform: none; font-weight: 600;">
@@ -1431,7 +1429,6 @@
 					</div>
 				</section>
 
-				<!-- Contact Details Grid -->
 				<section class="services-section" style="padding: 80px 0; background: #ffffff;">
 					<div class="main-container" style="flex-direction: column; gap: 50px;">
 						
@@ -1442,7 +1439,6 @@
 
 						<div class="services-grid">
 							
-							<!-- Australian HQ -->
 							<div class="service-card" style="text-align: left; padding: 40px 30px;">
 								<div class="card-icon-wrapper" style="font-size: 3.5rem; margin:0 0 25px 0;">🇦🇺</div>
 								<h3 style="color: #1E293B; font-size: 1.4rem; margin-bottom: 10px;">Australian Headquarters</h3>
@@ -1455,7 +1451,6 @@
 								</ul>
 							</div>
 
-							<!-- Director Desk -->
 							<div class="service-card" style="text-align: left; padding: 40px 30px;">
 								<div class="card-icon-wrapper" style="font-size: 3.5rem; margin:0 0 25px 0;">👨‍💼</div>
 								<h3 style="color: #1E293B; font-size: 1.4rem; margin-bottom: 10px;">Executive Directorate</h3>
@@ -1468,7 +1463,6 @@
 								</ul>
 							</div>
 
-							<!-- Partnership Desk -->
 							<div class="service-card" style="text-align: left; padding: 40px 30px;">
 								<div class="card-icon-wrapper" style="font-size: 3.5rem; margin:0 0 25px 0;">🌐</div>
 								<h3 style="color: #1E293B; font-size: 1.4rem; margin-bottom: 10px;">Strategic Partnership</h3>
@@ -1487,15 +1481,15 @@
 			</div>
 			</main>
 
-			<!-- Global Footer -->
+			<!-- Global Footer (Brushed Metal) -->
 			<footer id="modern-footer">
 				<div class="footer-stack">
 					<div class="footer-grid">
 						<div class="footer-col brand-col">
 							<a href="https://twoparrotsgroup.com.au/" target="_blank" rel="noopener noreferrer">
-								<img src="images/logo.png" alt="Two Parrots Group Australia Partnership" class="footer-logo" width="240" height="238" loading="lazy">
+								<img src="images/khtg.png" alt="KH Trading Group Partnership" class="footer-logo" width="75" height="75" loading="lazy">
 							</a>
-							<p>KH Trading Group provides premier international import and export services, global logistics, customs clearance, and B2B distribution in strategic partnership with <a href="https://twoparrotsgroup.com.au/" target="_blank" rel="noopener noreferrer" style="color: #E6C655; font-weight: 700;">twoparrotsgroup.com.au</a>.</p>
+							<p>KH Trading Group provides premier international import and export services, global logistics, customs clearance, and B2B distribution in strategic partnership with <a href="https://twoparrotsgroup.com.au/" target="_blank" rel="noopener noreferrer" style="color: #7A5B12; font-weight: 700;">twoparrotsgroup.com.au</a>.</p>
 							<div class="footer-badges" style="margin-top:15px;">
 								<span class="state-badge">ABN/ACN: 79 699 476 107</span>
 							</div>
@@ -1506,7 +1500,7 @@
 							<ul class="footer-links" style="line-height:2.2;">
 								<li><a href="#home">Home</a></li>
 								<li><a href="#products">Product Catalog</a></li>
-								<li><a href="#compliance">Import/Export & QA</a></li>
+								<li><a href="#compliance">Services & QA</a></li>
 								<li><a href="#about">About Us</a></li>
 								<li><a href="#contact">Contact Us</a></li>
 								<li><a href="Q1.html" rel="nofollow" class="staff-login-footer">Staff Login</a></li>
@@ -1525,7 +1519,7 @@
 
 					<div class="footer-bottom">
 						<div class="bottom-content">
-							<p>&copy; 2026 KH Trading Group. All Rights Reserved. In partnership with <a href="https://twoparrotsgroup.com.au/" target="_blank" rel="noopener noreferrer" style="color: #E6C655;">twoparrotsgroup.com.au</a>.</p>
+							<p>&copy; 2026 KH Trading Group. All Rights Reserved. In partnership with <a href="https://twoparrotsgroup.com.au/" target="_blank" rel="noopener noreferrer" style="color: #7A5B12;">twoparrotsgroup.com.au</a>.</p>
 						</div>
 					</div>
 				</div>
@@ -1533,12 +1527,11 @@
 
 		</div>
 
-		<!-- Single-Page Application & Form Scripts -->
 		<script>
 			const PAGE_TITLES = {
 				home: 'KH Trading Group | International Import & Export Services & B2B Distribution',
-				products: 'Products & Services | KH Trading Group',
-				compliance: 'Import/Export & QA | KH Trading Group',
+				products: 'Products | KH Trading Group',
+				compliance: 'Services & QA | KH Trading Group',
 				about: 'About Us | KH Trading Group',
 				contact: 'Contact Us | KH Trading Group'
 			};
