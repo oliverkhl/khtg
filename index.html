@@ -1,1 +1,957 @@
-PLACEHOLDER
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Two Parrots Group Australia Pty Ltd | Corporate Holding &amp; Global Agricultural Supply Group</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Two Parrots Group Australia Pty Ltd (twoparrotsgroup.com.au) is the Australian corporate holding group overseeing international agricultural sourcing, biosecurity compliance, and subsidiary trading operations including KH Trading Group (khtrading.com.au)." />
+	<meta property="og:title" content="Two Parrots Group Australia Pty Ltd | Corporate Group &amp; Operating Divisions" />
+	<meta property="og:description" content="Australian corporate group governing international agricultural trade, GMP/HACCP quality assurance, and wholesale B2B distribution via KH Trading Group." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://twoparrotsgroup.com.au/" />
+	<meta property="og:image" content="https://twoparrotsgroup.com.au/images/banner.webp" />
+	<meta property="og:locale" content="en_AU" />
+	<link rel="icon" href="favicon.ico" sizes="any">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+		:root {
+			--bg-white: #FFFFFF;
+			--bg-card-grey: #F4F5F7;
+			--bg-cream: #FFF3E3;
+			--bg-sand: #FCF8F3;
+			--bg-navy: #0B192C;
+			--bg-navy-deep: #07111F;
+			--gold-primary: #B88E2F;
+			--gold-bright: #D4AF37;
+			--silver-light: #E2E8F0;
+			--text-dark: #25282C;
+			--text-body: #55595E;
+			--text-muted: #898989;
+			--border-subtle: #E5E7EB;
+			--badge-green: #2EC1AC;
+			--container-max: 1240px;
+		}
+
+		* { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+		html { scroll-behavior: smooth; }
+		body {
+			font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+			background: var(--bg-white);
+			color: var(--text-dark);
+			line-height: 1.6;
+			overflow-x: hidden;
+		}
+		a { text-decoration: none; color: inherit; }
+		ul { list-style: none; }
+		img { max-width: 100%; display: block; }
+		:focus-visible { outline: 3px solid var(--gold-primary); outline-offset: 2px; }
+
+		.container {
+			width: 92%;
+			max-width: var(--container-max);
+			margin: 0 auto;
+		}
+
+		/* ==========================================================================
+		   1. CLEAN CORPORATE HEADER (MATCHING SISTER SITE DESIGN LANGUAGE)
+		   ========================================================================== */
+		.site-header {
+			position: sticky;
+			top: 0;
+			z-index: 1000;
+			background: rgba(255, 255, 255, 0.98);
+			backdrop-filter: blur(8px);
+			border-bottom: 1px solid var(--border-subtle);
+		}
+		.header-inner {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			height: 98px;
+			gap: 20px;
+		}
+		.brand-logo {
+			display: flex;
+			align-items: center;
+			gap: 14px;
+			flex-shrink: 0;
+		}
+		.brand-emblem {
+			width: 68px;
+			height: 68px;
+			border-radius: 14px;
+			background: linear-gradient(135deg, var(--bg-navy) 0%, #162B47 100%);
+			display: grid;
+			place-items: center;
+			color: #FFD700;
+			font-weight: 800;
+			font-size: 1.45rem;
+			letter-spacing: -0.03em;
+			box-shadow: 0 6px 18px rgba(11, 25, 44, 0.18);
+		}
+		.brand-logo-text strong {
+			display: block;
+			font-size: 1.38rem;
+			font-weight: 800;
+			color: var(--text-dark);
+			line-height: 1.1;
+			letter-spacing: -0.02em;
+		}
+		.brand-logo-text span {
+			display: block;
+			font-size: 0.76rem;
+			font-weight: 700;
+			color: var(--gold-primary);
+			text-transform: uppercase;
+			letter-spacing: 0.14em;
+		}
+
+		.center-nav {
+			display: flex;
+			align-items: center;
+			gap: 30px;
+		}
+		.center-nav a {
+			font-size: 0.94rem;
+			font-weight: 500;
+			color: var(--text-dark);
+			transition: color 0.2s ease;
+		}
+		.center-nav a:hover { color: var(--gold-primary); }
+
+		.header-actions {
+			display: flex;
+			align-items: center;
+			gap: 12px;
+		}
+		.social-top-links {
+			display: flex;
+			align-items: center;
+			gap: 8px;
+		}
+		.social-icon-link {
+			width: 34px;
+			height: 34px;
+			border-radius: 50%;
+			border: 1px solid var(--border-subtle);
+			background: var(--bg-card-grey);
+			color: var(--text-dark);
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			transition: all 0.2s ease;
+		}
+		.social-icon-link:hover {
+			background: var(--gold-primary);
+			color: #FFFFFF;
+			border-color: var(--gold-primary);
+		}
+		.subsidiary-pill-btn {
+			display: inline-flex;
+			align-items: center;
+			gap: 6px;
+			padding: 10px 18px;
+			border-radius: 999px;
+			background: var(--bg-navy);
+			color: #FFD700;
+			font-size: 0.8rem;
+			font-weight: 700;
+			transition: all 0.2s ease;
+		}
+		.subsidiary-pill-btn:hover {
+			background: var(--gold-primary);
+			color: #FFFFFF;
+		}
+
+		/* ==========================================================================
+		   2. EXECUTIVE CORPORATE HERO
+		   ========================================================================== */
+		.hero-parent {
+			position: relative;
+			min-height: 590px;
+			background: url('images/banner.webp'), url('https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=1600&q=80') center center / cover no-repeat;
+			display: flex;
+			align-items: center;
+			padding: 64px 0;
+		}
+		.hero-parent::before {
+			content: "";
+			position: absolute;
+			inset: 0;
+			background: linear-gradient(90deg, rgba(11, 25, 44, 0.86) 0%, rgba(11, 25, 44, 0.58) 55%, rgba(11, 25, 44, 0.25) 100%);
+		}
+		.hero-parent-inner {
+			position: relative;
+			z-index: 2;
+			max-width: 720px;
+			color: #FFFFFF;
+		}
+		.hero-tag {
+			display: inline-block;
+			background: rgba(212, 175, 55, 0.18);
+			border: 1px solid var(--gold-bright);
+			color: #FFD700;
+			font-size: 0.78rem;
+			font-weight: 700;
+			letter-spacing: 0.12em;
+			text-transform: uppercase;
+			padding: 6px 14px;
+			border-radius: 4px;
+			margin-bottom: 18px;
+		}
+		.hero-parent h1 {
+			font-size: clamp(2.1rem, 3.8vw, 3.1rem);
+			font-weight: 700;
+			line-height: 1.18;
+			margin-bottom: 18px;
+		}
+		.hero-parent p {
+			font-size: 1.02rem;
+			color: #E5E7EB;
+			line-height: 1.7;
+			margin-bottom: 30px;
+		}
+		.hero-cta-row {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 16px;
+		}
+		.btn-gold-solid {
+			display: inline-block;
+			background: var(--gold-primary);
+			color: #FFFFFF;
+			font-weight: 700;
+			font-size: 0.88rem;
+			text-transform: uppercase;
+			letter-spacing: 0.06em;
+			padding: 16px 34px;
+			border-radius: 4px;
+			transition: all 0.2s ease;
+		}
+		.btn-gold-solid:hover {
+			background: #FFFFFF;
+			color: var(--bg-navy);
+		}
+		.btn-outline-light {
+			display: inline-block;
+			border: 1.5px solid #FFFFFF;
+			color: #FFFFFF;
+			font-weight: 600;
+			font-size: 0.88rem;
+			padding: 15px 30px;
+			border-radius: 4px;
+			transition: all 0.2s ease;
+		}
+		.btn-outline-light:hover {
+			background: #FFFFFF;
+			color: var(--bg-navy);
+		}
+
+		/* ==========================================================================
+		   3. GROUP OPERATING DIVISIONS & SUBSIDIARIES (CORE PARENT-SUBSIDIARY HUB)
+		   ========================================================================== */
+		.section { padding: 76px 0; }
+		.section-title-center {
+			text-align: center;
+			max-width: 720px;
+			margin: 0 auto 48px auto;
+		}
+		.section-title-center h2 {
+			font-size: 2.05rem;
+			font-weight: 700;
+			color: var(--text-dark);
+			margin-bottom: 10px;
+		}
+		.section-title-center p {
+			font-size: 0.98rem;
+			color: var(--text-muted);
+		}
+
+		.divisions-grid {
+			display: grid;
+			grid-template-columns: 1.2fr 0.8fr;
+			gap: 28px;
+			align-items: stretch;
+		}
+		.division-card-featured {
+			background: var(--bg-cream);
+			border: 1.5px solid var(--gold-bright);
+			border-radius: 12px;
+			padding: 38px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			box-shadow: 0 18px 40px rgba(184, 142, 47, 0.1);
+		}
+		.division-badge {
+			display: inline-block;
+			background: var(--bg-navy);
+			color: #FFD700;
+			font-size: 0.72rem;
+			font-weight: 700;
+			letter-spacing: 0.08em;
+			text-transform: uppercase;
+			padding: 5px 12px;
+			border-radius: 4px;
+			margin-bottom: 14px;
+			width: fit-content;
+		}
+		.division-card-featured h3 {
+			font-size: 1.6rem;
+			font-weight: 700;
+			color: var(--text-dark);
+			margin-bottom: 10px;
+		}
+		.division-card-featured p {
+			font-size: 0.95rem;
+			color: var(--text-body);
+			margin-bottom: 20px;
+		}
+		.division-meta-list {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 10px;
+			background: #FFFFFF;
+			padding: 16px;
+			border-radius: 8px;
+			margin-bottom: 24px;
+			font-size: 0.84rem;
+		}
+		.division-card-secondary {
+			background: var(--bg-card-grey);
+			border: 1px solid var(--border-subtle);
+			border-radius: 12px;
+			padding: 36px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		.division-card-secondary h3 {
+			font-size: 1.35rem;
+			font-weight: 700;
+			margin-bottom: 10px;
+		}
+		.division-card-secondary p {
+			font-size: 0.92rem;
+			color: var(--text-body);
+			margin-bottom: 18px;
+		}
+
+		/* ==========================================================================
+		   4. STRATEGIC PILLARS (3-COLUMN VERTICAL CARDS)
+		   ========================================================================== */
+		.pillars-grid {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 24px;
+		}
+		.pillar-card {
+			background: var(--bg-card-grey);
+			border-radius: 10px;
+			overflow: hidden;
+			transition: transform 0.25s ease;
+		}
+		.pillar-card:hover { transform: translateY(-5px); }
+		.pillar-img {
+			height: 250px;
+			overflow: hidden;
+		}
+		.pillar-img img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		.pillar-body {
+			padding: 24px;
+		}
+		.pillar-body h3 {
+			font-size: 1.18rem;
+			font-weight: 700;
+			margin-bottom: 8px;
+		}
+		.pillar-body p {
+			font-size: 0.88rem;
+			color: var(--text-body);
+		}
+
+		/* ==========================================================================
+		   5. DEEP NAVY GOVERNANCE & BIOSECURITY SPOTLIGHT BANNER
+		   ========================================================================== */
+		.navy-governance {
+			background: var(--bg-navy);
+			color: #FFFFFF;
+			padding: 68px 0;
+		}
+		.governance-grid {
+			display: grid;
+			grid-template-columns: 1.15fr 0.85fr;
+			gap: 44px;
+			align-items: center;
+		}
+		.gov-tag {
+			color: var(--badge-green);
+			font-size: 0.84rem;
+			font-weight: 600;
+			display: block;
+			margin-bottom: 10px;
+		}
+		.navy-governance h2 {
+			font-size: clamp(1.85rem, 3vw, 2.55rem);
+			font-weight: 700;
+			line-height: 1.2;
+			margin-bottom: 18px;
+		}
+		.navy-governance p {
+			color: #D1D5DB;
+			font-size: 0.95rem;
+			margin-bottom: 26px;
+		}
+		.circle-metrics {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 16px;
+			margin-bottom: 28px;
+		}
+		.circle-badge {
+			width: 82px;
+			height: 82px;
+			border-radius: 50%;
+			background: #FFFFFF;
+			color: var(--text-dark);
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			padding: 6px;
+		}
+		.circle-badge strong { font-size: 0.9rem; font-weight: 700; line-height: 1.1; }
+		.circle-badge span { font-size: 0.62rem; color: var(--text-body); margin-top: 2px; }
+		.gov-visual {
+			border-radius: 12px;
+			overflow: hidden;
+			box-shadow: 0 22px 46px rgba(0, 0, 0, 0.35);
+		}
+		.gov-visual img {
+			width: 100%;
+			height: 340px;
+			object-fit: cover;
+		}
+
+		/* ==========================================================================
+		   6. GROUP LEADERSHIP & CORPORATE GOVERNANCE (WARM SAND SECTION)
+		   ========================================================================== */
+		.leadership-section {
+			background: var(--bg-sand);
+			padding: 76px 0;
+		}
+		.leadership-grid {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 44px;
+			align-items: center;
+		}
+		.leader-cards-stack {
+			display: grid;
+			gap: 16px;
+		}
+		.leader-card {
+			background: #FFFFFF;
+			padding: 22px 24px;
+			border-radius: 8px;
+			border-left: 4px solid var(--gold-primary);
+			box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+		}
+		.leader-card strong {
+			display: block;
+			font-size: 1.1rem;
+			color: var(--text-dark);
+		}
+		.leader-card span {
+			display: block;
+			font-size: 0.82rem;
+			font-weight: 700;
+			color: var(--gold-primary);
+			margin-bottom: 6px;
+		}
+		.leader-card p {
+			font-size: 0.86rem;
+			color: var(--text-body);
+		}
+
+		/* ==========================================================================
+		   7. CORPORATE & TRADE INQUIRY DESK
+		   ========================================================================== */
+		.contact-section {
+			background: #FFFFFF;
+			padding: 76px 0;
+			border-top: 1px solid var(--border-subtle);
+		}
+		.contact-grid {
+			display: grid;
+			grid-template-columns: 0.9fr 1.1fr;
+			gap: 42px;
+			align-items: start;
+		}
+		.office-box {
+			background: var(--bg-card-grey);
+			padding: 28px;
+			border-radius: 10px;
+			line-height: 1.95;
+			font-size: 0.92rem;
+		}
+		.form-box {
+			background: var(--bg-card-grey);
+			padding: 36px;
+			border-radius: 10px;
+		}
+		.f-row-2 {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 14px;
+		}
+		.f-field { margin-bottom: 15px; }
+		.f-field label {
+			display: block;
+			font-size: 0.8rem;
+			font-weight: 600;
+			margin-bottom: 6px;
+		}
+		.f-field input, .f-field select, .f-field textarea {
+			width: 100%;
+			padding: 12px 14px;
+			border: 1px solid #CBD5E1;
+			border-radius: 6px;
+			font-family: inherit;
+			font-size: 0.9rem;
+			background: #FFFFFF;
+		}
+
+		/* ==========================================================================
+		   8. DEEP NAVY GROUP FOOTER
+		   ========================================================================== */
+		.group-footer {
+			background: var(--bg-navy);
+			color: #E5E7EB;
+			padding: 64px 0 28px;
+			font-size: 0.85rem;
+		}
+		.footer-4-grid {
+			display: grid;
+			grid-template-columns: 1.4fr 1.1fr 1fr 1.1fr;
+			gap: 28px;
+			padding-bottom: 42px;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+		}
+		.group-footer h4 {
+			color: #FFFFFF;
+			font-size: 1rem;
+			font-weight: 600;
+			margin-bottom: 16px;
+		}
+		.group-footer li { margin-bottom: 10px; color: #D1D5DB; }
+		.group-footer a:hover { color: #FFD700; }
+		.footer-copy {
+			text-align: center;
+			padding-top: 24px;
+			font-size: 0.8rem;
+			color: #9CA3AF;
+		}
+
+		@media (max-width: 960px) {
+			.center-nav, .social-top-links { display: none; }
+			.divisions-grid, .pillars-grid, .governance-grid, .leadership-grid, .contact-grid, .footer-4-grid {
+				grid-template-columns: 1fr;
+			}
+		}
+		@media (max-width: 560px) {
+			.division-meta-list, .f-row-2 { grid-template-columns: 1fr; }
+		}
+	</style>
+</head>
+<body>
+	<!-- 1. CORPORATE HEADER -->
+	<header class="site-header">
+		<div class="container header-inner">
+			<a href="#top" class="brand-logo">
+				<div class="brand-emblem" aria-hidden="true">TPG</div>
+				<div class="brand-logo-text">
+					<strong>Two Parrots Group</strong>
+					<span>Australia Pty Ltd</span>
+				</div>
+			</a>
+
+			<nav class="center-nav" aria-label="Corporate Navigation">
+				<a href="#top">Group Overview</a>
+				<a href="#operating-divisions">Subsidiaries &amp; Divisions</a>
+				<a href="#strategic-pillars">Core Capabilities</a>
+				<a href="#governance">Quality &amp; Compliance</a>
+				<a href="#leadership">Leadership</a>
+				<a href="#corporate-contact">Contact</a>
+			</nav>
+
+			<div class="header-actions">
+				<div class="social-top-links" aria-label="Social Media Links">
+					<a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Facebook">
+						<svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+					</a>
+					<a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="LinkedIn">
+						<svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+					</a>
+				</div>
+				<a href="https://khtrading.com.au/" target="_blank" rel="noopener noreferrer" class="subsidiary-pill-btn">
+					Visit KH Trading Group &rarr;
+				</a>
+			</div>
+		</div>
+	</header>
+
+	<main id="top">
+		<!-- 2. CORPORATE HERO -->
+		<section class="hero-parent">
+			<div class="container">
+				<div class="hero-parent-inner">
+					<span class="hero-tag">🇦🇺 Australian Corporate Holding Group | Victoria</span>
+					<h1>Connecting International Agricultural Supply with Australian Commercial Markets</h1>
+					<p>
+						Two Parrots Group Australia Pty Ltd governs direct origin sourcing, biosecurity compliance, and cross-border agricultural supply chains, operating commercial import, export, and wholesale distribution through our trading arm <strong>KH Trading Group</strong> (khtrading.com.au).
+					</p>
+					<div class="hero-cta-row">
+						<a href="#operating-divisions" class="btn-gold-solid">Explore Operating Divisions</a>
+						<a href="https://khtrading.com.au/" target="_blank" rel="noopener noreferrer" class="btn-outline-light">KH Trading Group Storefront</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 3. GROUP STRUCTURE & OPERATING DIVISIONS -->
+		<section id="operating-divisions" class="section">
+			<div class="container">
+				<div class="section-title-center">
+					<h2>Corporate Structure &amp; Operating Divisions</h2>
+					<p>Structured governance separating group-level origin compliance from front-line Australian B2B import/export and wholesale fulfilment.</p>
+				</div>
+
+				<div class="divisions-grid">
+					<!-- Subsidiary / Trading Arm Card -->
+					<div class="division-card-featured">
+						<div>
+							<span class="division-badge">Commercial Import, Export &amp; Wholesale Arm</span>
+							<h3>KH Trading Group (khtrading.com.au)</h3>
+							<p>
+								Operating under parent entity Two Parrots Group Australia Pty Ltd, <strong>KH Trading Group</strong> manages international freight forwarding, DAFF/BICON customs clearance, and B2B wholesale distribution of steam-sterilized Kampot black &amp; white pepper, specialty flours, and artisanal rice noodles across Australia.
+							</p>
+							<div class="division-meta-list">
+								<div><strong>ABN / ACN:</strong> 79 699 476 107</div>
+								<div><strong>Operations Base:</strong> Noble Park North, VIC 3174</div>
+								<div><strong>Direct Trade Desk:</strong> info@khtrading.com.au</div>
+								<div><strong>Commercial Phone:</strong> 0468 829 988</div>
+							</div>
+						</div>
+						<div>
+							<a href="https://khtrading.com.au/" target="_blank" rel="noopener noreferrer" class="btn-gold-solid">
+								Open KH Trading Group Catalog &rarr;
+							</a>
+						</div>
+					</div>
+
+					<!-- Parent Holding & Origin Sourcing Card -->
+					<div class="division-card-secondary">
+						<div>
+							<span class="division-badge" style="background: var(--gold-primary); color: #FFFFFF;">Parent Holding Entity</span>
+							<h3>Two Parrots Group Australia Pty Ltd</h3>
+							<p>
+								Headquartered in Victoria, Australia, Two Parrots Group Australia Pty Ltd oversees international supplier partnerships across Cambodia and Southeast Asia, ensuring GMP, HACCP, and Geographical Indication (GI) traceability prior to export into Australian ports.
+							</p>
+							<ul style="font-size: 0.86rem; color: var(--text-body); line-height: 1.9; margin-bottom: 20px;">
+								<li>✓ Direct farm-gate &amp; processing facility auditing</li>
+								<li>✓ Export phytosanitary &amp; Certificate of Origin governance</li>
+								<li>✓ Strategic capital &amp; subsidiary expansion</li>
+							</ul>
+						</div>
+						<div>
+							<a href="#corporate-contact" style="font-weight: 700; color: var(--gold-primary); border-bottom: 2px solid var(--gold-primary); padding-bottom: 3px;">
+								Corporate &amp; Partnership Inquiries &rarr;
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 4. STRATEGIC PILLARS -->
+		<section id="strategic-pillars" class="section" style="padding-top: 12px;">
+			<div class="container">
+				<div class="section-title-center">
+					<h2>Core Group Capabilities</h2>
+					<p>Integrated farm-to-warehouse oversight engineered for Australian food processors, supermarkets, and commercial buyers.</p>
+				</div>
+
+				<div class="pillars-grid">
+					<div class="pillar-card">
+						<div class="pillar-img">
+							<img src="images/1.webp" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1599909533681-74046c31c496?auto=format&fit=crop&w=800&q=80';" alt="Origin Agricultural Sourcing" loading="lazy">
+						</div>
+						<div class="pillar-body">
+							<h3>Origin Agricultural Sourcing</h3>
+							<p>Direct procurement of steam-sterilized Kampot pepper, specialty milled rice &amp; tapioca flours, and dried rice noodles.</p>
+						</div>
+					</div>
+
+					<div class="pillar-card">
+						<div class="pillar-img">
+							<img src="images/bio-assur.webp" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=800&q=80';" alt="Biosecurity and Quality Assurance" loading="lazy">
+						</div>
+						<div class="pillar-body">
+							<h3>Biosecurity &amp; QA Governance</h3>
+							<p>Strict adherence to Australian DAFF &amp; BICON import conditions, moisture thresholds (&le;12%), and 0.00% foreign matter standards.</p>
+						</div>
+					</div>
+
+					<div class="pillar-card">
+						<div class="pillar-img">
+							<img src="images/2.webp" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&w=800&q=80';" alt="Victorian B2B Fulfilment" loading="lazy">
+						</div>
+						<div class="pillar-body">
+							<h3>Victorian B2B Fulfilment</h3>
+							<p>Container consolidation, customs brokerage, and palletized wholesale dispatch through KH Trading Group in Noble Park North.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 5. GOVERNANCE & BIOSECURITY SPOTLIGHT -->
+		<section id="governance" class="navy-governance">
+			<div class="container governance-grid">
+				<div>
+					<span class="gov-tag">Group Quality &amp; Biosecurity Framework</span>
+					<h2>Built on Australian Biosecurity &amp; International GMP Standards</h2>
+					<p>
+						Every shipment moving from origin facilities to our Victorian distribution network undergoes rigorous laboratory verification, steam sterilization, and customs documentation review.
+					</p>
+					<div class="circle-metrics">
+						<div class="circle-badge">
+							<strong>GMP</strong>
+							<span>Certified</span>
+						</div>
+						<div class="circle-badge">
+							<strong>HACCP</strong>
+							<span>Verified</span>
+						</div>
+						<div class="circle-badge">
+							<strong>DAFF</strong>
+							<span>Compliant</span>
+						</div>
+						<div class="circle-badge">
+							<strong>25+</strong>
+							<span>Active SKUs</span>
+						</div>
+					</div>
+					<a href="https://khtrading.com.au/#compliance-strip" target="_blank" rel="noopener noreferrer" class="btn-gold-solid">
+						View Technical Export Matrix
+					</a>
+				</div>
+
+				<div class="gov-visual">
+					<img src="images/products-banner.webp" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&w=1000&q=80';" alt="Agricultural Plantation Inspection" loading="lazy">
+				</div>
+			</div>
+		</section>
+
+		<!-- 6. EXECUTIVE LEADERSHIP -->
+		<section id="leadership" class="leadership-section">
+			<div class="container leadership-grid">
+				<div>
+					<span class="hero-tag" style="background: var(--bg-cream); color: var(--gold-primary); border-color: var(--gold-primary);">Executive Governance</span>
+					<h2 style="font-size: 2.1rem; font-weight: 700; margin-bottom: 14px;">Group Leadership &amp; Victorian Operations</h2>
+					<p style="color: var(--text-body); margin-bottom: 20px; line-height: 1.75;">
+						Two Parrots Group Australia Pty Ltd combines cross-border commercial leadership with hands-on Victorian warehousing, HR, and daily logistics execution.
+					</p>
+					<a href="https://khtrading.com.au/" target="_blank" rel="noopener noreferrer" class="btn-gold-solid">
+						Explore KH Trading Group
+					</a>
+				</div>
+
+				<div class="leader-cards-stack">
+					<div class="leader-card">
+						<strong>Kim Heng LY</strong>
+						<span>Managing Director — Two Parrots Group Australia Pty Ltd &amp; KH Trading Group</span>
+						<p>Leads corporate strategy, international supplier partnerships, cross-border trade finance, and Australian wholesale expansion.</p>
+					</div>
+					<div class="leader-card">
+						<strong>Chhingleang Loy</strong>
+						<span>Operations Manager — Two Parrots Group Australia Pty Ltd</span>
+						<p>Directs daily Victorian warehouse operations, logistics scheduling, compliance administration, and human resources out of Noble Park North.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 7. CORPORATE & TRADE INQUIRY DESK -->
+		<section id="corporate-contact" class="contact-section">
+			<div class="container contact-grid">
+				<div>
+					<span class="hero-tag" style="background: var(--bg-cream); color: var(--gold-primary); border-color: var(--gold-primary);">Corporate &amp; Trade Desk</span>
+					<h2 style="font-size: 2rem; font-weight: 700; margin-bottom: 14px;">Connect with Two Parrots Group Australia</h2>
+					<p style="color: var(--text-body); margin-bottom: 24px;">
+						For corporate partnerships, supplier onboarding, or direct wholesale product quotations via KH Trading Group, reach our Victorian office below.
+					</p>
+
+					<div class="office-box">
+						<p><strong>Parent Entity:</strong> Two Parrots Group Australia Pty Ltd</p>
+						<p><strong>Trading Arm:</strong> KH Trading Group (<a href="https://khtrading.com.au/" target="_blank" rel="noopener noreferrer" style="color: var(--gold-primary); font-weight: 700;">khtrading.com.au</a>)</p>
+						<p><strong>ABN/ACN:</strong> 79 699 476 107</p>
+						<p><strong>Victorian Office:</strong> 1/57 Elonera Rd, Noble Park North VIC 3174</p>
+						<p><strong>Phone:</strong> <a href="tel:0468829988" style="color: var(--gold-primary); font-weight: 700;">0468 829 988</a></p>
+						<p><strong>Trade Email:</strong> <a href="mailto:info@khtrading.com.au" style="color: var(--gold-primary); font-weight: 700;">info@khtrading.com.au</a></p>
+					</div>
+				</div>
+
+				<div class="form-box">
+					<form id="groupInquiryForm">
+						<h3 style="font-size: 1.35rem; font-weight: 700; margin-bottom: 4px;">Corporate &amp; Wholesale Inquiry</h3>
+						<p style="font-size: 0.84rem; color: var(--text-muted); margin-bottom: 20px;">Direct routing to our Victorian executive and commercial trade desk.</p>
+
+						<div style="display:none !important;" aria-hidden="true">
+							<input type="text" name="website_hp" id="website_hp" tabindex="-1" autocomplete="off">
+						</div>
+
+						<div class="f-row-2">
+							<div class="f-field">
+								<label for="full-name">Full Name</label>
+								<input id="full-name" type="text" name="Full Name" placeholder="e.g. Sarah Jenkins" required>
+							</div>
+							<div class="f-field">
+								<label for="company-name">Company / Organization</label>
+								<input id="company-name" type="text" name="Company Name" placeholder="e.g. Pacific Food Imports" required>
+							</div>
+						</div>
+
+						<div class="f-row-2">
+							<div class="f-field">
+								<label for="email-address">Email Address</label>
+								<input id="email-address" type="email" name="Email Address" placeholder="name@company.com.au" required>
+							</div>
+							<div class="f-field">
+								<label for="inquiry-type">Inquiry Division</label>
+								<select id="inquiry-type" name="Inquiry Type" required>
+									<option value="Wholesale & Import/Export (KH Trading Group)">Wholesale &amp; Import/Export (KH Trading Group)</option>
+									<option value="Corporate Partnership (Two Parrots Group)">Corporate Partnership (Two Parrots Group)</option>
+									<option value="Supplier & Origin Onboarding">Supplier &amp; Origin Onboarding</option>
+									<option value="Official AUD Price List">Official AUD Price List</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="f-field">
+							<label for="message">Message</label>
+							<textarea id="message" name="Message" rows="4" placeholder="Tell us about your commercial or partnership requirements..." required></textarea>
+						</div>
+
+						<div class="f-field" style="background: var(--bg-cream); padding: 12px 14px; border-radius: 6px; display: flex; align-items: center; gap: 10px;">
+							<input type="checkbox" id="human_check" name="Contact Consent" value="Agreed" style="width: 18px; height: 18px; accent-color: var(--gold-primary); cursor: pointer;" required>
+							<label for="human_check" style="margin: 0; font-size: 0.85rem; cursor: pointer;">I agree to be contacted by Two Parrots Group Australia / KH Trading Group.</label>
+						</div>
+
+						<button type="submit" class="btn-gold-solid" id="submitBtn" style="width: 100%; border: none; cursor: pointer;">Submit Inquiry</button>
+						<p id="formStatus" style="display:none; margin-top: 12px; font-weight: 700; text-align: center;"></p>
+					</form>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- 8. GROUP FOOTER -->
+	<footer class="group-footer">
+		<div class="container">
+			<div class="footer-4-grid">
+				<div>
+					<h4 style="font-size: 1.15rem; color: #FFD700;">Two Parrots Group Australia Pty Ltd</h4>
+					<p style="font-size: 0.83rem; color: #D1D5DB; line-height: 1.7;">
+						Australian corporate holding group overseeing international agricultural sourcing, biosecurity QA, and wholesale B2B distribution via subsidiary KH Trading Group.
+					</p>
+				</div>
+
+				<div>
+					<h4>Operating Divisions</h4>
+					<ul>
+						<li><a href="https://khtrading.com.au/" target="_blank" rel="noopener noreferrer" style="color: #FFD700; font-weight: 600;">KH Trading Group (khtrading.com.au)</a></li>
+						<li><a href="https://khtrading.com.au/#our-products" target="_blank" rel="noopener noreferrer">Wholesale Product Catalog (25 SKUs)</a></li>
+						<li><a href="https://khtrading.com.au/#compliance-strip" target="_blank" rel="noopener noreferrer">DAFF &amp; BICON Export Specs</a></li>
+					</ul>
+				</div>
+
+				<div>
+					<h4>Corporate Navigation</h4>
+					<ul>
+						<li><a href="#top">Group Overview</a></li>
+						<li><a href="#operating-divisions">Subsidiaries &amp; Divisions</a></li>
+						<li><a href="#governance">Quality &amp; Compliance</a></li>
+						<li><a href="#leadership">Leadership</a></li>
+						<li><a href="#corporate-contact">Contact</a></li>
+					</ul>
+				</div>
+
+				<div>
+					<h4>Victorian Headquarters</h4>
+					<ul>
+						<li>1/57 Elonera Rd, Noble Park North VIC 3174</li>
+						<li>ABN/ACN: 79 699 476 107</li>
+						<li><a href="tel:0468829988">0468 829 988</a></li>
+						<li><a href="mailto:info@khtrading.com.au">info@khtrading.com.au</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="footer-copy">
+				&copy; 2026 Two Parrots Group Australia Pty Ltd (twoparrotsgroup.com.au). Operating Commercial Arm: <a href="https://khtrading.com.au/" target="_blank" rel="noopener noreferrer" style="color: #FFD700;">KH Trading Group (khtrading.com.au)</a>. All Rights Reserved.
+			</div>
+		</div>
+	</footer>
+
+	<script>
+		const scriptURL = 'https://script.google.com/macros/s/AKfycbwqxF9RnU8lQF9KPdhpGk8pSd_QVUs088C1BROfscwl6byHjp7W3HqZ3I6P22d5HCH1/exec';
+		const form = document.getElementById('groupInquiryForm');
+		const statusText = document.getElementById('formStatus');
+		const submitBtn = document.getElementById('submitBtn');
+
+		function showStatus(msg, ok) {
+			statusText.style.display = 'block';
+			statusText.style.color = ok ? '#B88E2F' : '#B91C1C';
+			statusText.innerText = msg;
+		}
+
+		if (form) {
+			form.addEventListener('submit', function(e) {
+				e.preventDefault();
+				if (!document.getElementById('human_check').checked) {
+					showStatus('Please check the consent box before submitting.', false);
+					return;
+				}
+				if (document.getElementById('website_hp').value !== '') {
+					showStatus('Thank you! Your inquiry has been processed.', true);
+					form.reset();
+					return;
+				}
+				submitBtn.disabled = true;
+				submitBtn.innerText = 'Sending...';
+
+				fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+					.then(function() {
+						showStatus('Thank you! Your inquiry has been sent to our executive & trade desk.', true);
+						form.reset();
+						submitBtn.disabled = false;
+						submitBtn.innerText = 'Submit Inquiry';
+					})
+					.catch(function() {
+						showStatus('Something went wrong. Please try again.', false);
+						submitBtn.disabled = false;
+						submitBtn.innerText = 'Submit Inquiry';
+					});
+			});
+		}
+	</script>
+</body>
+</html>
